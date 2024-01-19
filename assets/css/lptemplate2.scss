@@ -26,6 +26,17 @@ body {
 
 .lander-img-container {
   padding: 20px 0;
+  position: relative; /* Add this line */
+
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: auto;
 }
 
 .lander-img {
@@ -225,6 +236,9 @@ footer > * { /* Target all direct children of the footer */
   .lander-img {
     width: 100%; /* Set the width to 100% for responsiveness */
     height: auto; /* Maintain aspect ratio */
+  }
+  .play-btn {
+    width: 90px;
   }
   .watch-button {
     /*width: 90%;*/
