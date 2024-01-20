@@ -12,7 +12,22 @@ body {
   margin: 0 auto; /* Center the content on the page */
 }
 
+.top-banner {
+  position: relative;
+  background-color: #dc1818;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  line-height: 40px;
+}
+
 .heading {
+  position: relative;
+  width: 90%;
+  margin: 0 auto; /* Center the container using auto margin */
   letter-spacing: 0;
   text-align: center;
   font-weight: 700;

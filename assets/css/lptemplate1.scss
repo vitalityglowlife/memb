@@ -48,21 +48,20 @@ body {
 
 .watch-button {
   border-radius: 5px; /* Round the corners slightly */
-  background-color: rgb(21, 95, 247);
-  color: white; /* White text for the button */
+  background-color: rgb(255, 215, 17);
+  color: black;
   padding: 15px 0; /* Add padding for visual appeal */
-  margin-bottom: 40px;
   text-align: center; /* Center the text within the button */
   box-sizing: border-box;
   text-decoration: none; /* Remove underline from text */
   display: inline-block; /* Ensure button behaves like a button */
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   font-family: 'Yantramanav', sans-serif;
 
-  width: 100%;
-  line-height: 25px;
-  font-size: 25px;
+  width: 90%;
+  line-height: 20px;
+  font-size: 18px;
 }
 
 pre b {
@@ -75,7 +74,7 @@ pre b {
   text-align: left;
   line-height: 23px;
   font-size: 19px;
-  padding-left: 10px; /*somehow need padding to make text looked centered*/
+  padding-left: 30px; /*somehow need padding to make text looked centered*/
   white-space: pre-wrap;
 }
 

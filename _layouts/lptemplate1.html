@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ page.faviconLink | default: '../favicon.png' }}">
+
+    <script>
+        window.clickmagick_cmc = {
+            uid: '{{ page.cmcUid }}',
+            hid: '{{ page.cmcHid }}',
+            cmc_project: '{{ page.cmcProject }}',
+            log_action: '.cta',
+            vid_info: 'on',
+        }
+    </script>
+    <script src='//cdn.clkmc.com/cmc.js'></script>
+    <link rel="stylesheet" href="../assets/css/lptemplate1.css">
+</head>
+<body>
+<div class="main-body">
+    <!-- Header -->
+    <div id="loadingSpinner" class="hidden"></div>
+    <div id="overlay"></div>
+    <div class="heading">
+        <span>{{ page.headingLine }}</span>
+    </div>
+    <a class="cta" href="{{ page.vendorHopLink }}"
+       target="_top">
+        <div class="watch-button">Click Here To Watch The Video</div>
+    </a>
+    <!-- Image -->
+    <div  class="lander-img-container">
+        <!-- todo cmc_vid not replace in edge but works in chrome when running locally why? -->
+        <a class="cta" href="{{ page.vendorHopLink }}"
+           target="_top">
+            <img class="lander-img" src="lander_image.jpg">
+            {% include play-btn-b.html %}
+        </a>
+    </div>
+    <!-- Paragraph -->
+    <article>
+        <div class="paragraph">
+            <pre>{{ content }}</pre>
+        </div>
+    </article>
+
+    <a class="cta" href="{{ page.vendorHopLink }}"
+       target="_top">
+        <div class="watch-button">Click Here To Watch The Video</div>
+    </a>
+    <div style="padding: 40px;"></div>
+</div>
+<footer>
+    <p class="copyright-txt">Copyright 2024. All rights reserved.</p>
+    <p class="disclaimer-txt">This site is not a part of Google, Inc. or Google.com, nor is it sponsored or endorsed
+        by Google. YouTube is a trademark of Google, Inc.</p>
+    <p class="disclaimer-txt">Please consult a health professional before implementing any strategy discussed on
+        this website.</p>
+</footer>
+<div class="tnc">
+    <a class="tnc-link" href="{{ page.privacyLink }}" title="" target="_blank"
+       rel="noopener"><span>Privacy</span></a>
+    <a class="tnc-link" href="{{ page.termsLink }}" title="" target="_blank"
+       rel="noopener"><span>Terms</span></a>
+</div>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
