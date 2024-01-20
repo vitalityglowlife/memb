@@ -15,13 +15,191 @@
         }
     </script>
     <script src='//cdn.clkmc.com/cmc.js'></script>
-    <link rel="stylesheet" href="../assets/css/lptemplate2.css">
+    <link rel="stylesheet" href="../assets/css/spinner.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .main-body {
+            text-align: center;
+            width: 871px;
+            margin: 0 auto; /* Center the content on the page */
+        }
+
+        .heading {
+            letter-spacing: 0;
+            text-align: center;
+            font-weight: 700;
+            line-height: 45px;
+            font-size: 36px;
+            padding: 20px 0;
+        }
+
+        .heading span b {
+            color: rgb(1, 144, 222);
+        }
+
+        .lander-img-container {
+            padding: 20px 0;
+            position: relative; /* Add this line */
+
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 130px;
+            height: auto;
+        }
+
+        .lander-img {
+            border: 3px solid black;
+            width: 728px;
+            height: 410px;
+        }
+
+        .watch-button {
+            border-radius: 5px; /* Round the corners slightly */
+            background-color: rgb(21, 95, 247);
+            color: white; /* White text for the button */
+            padding: 15px 0; /* Add padding for visual appeal */
+            margin-bottom: 40px;
+            text-align: center; /* Center the text within the button */
+            box-sizing: border-box;
+            text-decoration: none; /* Remove underline from text */
+            display: inline-block; /* Ensure button behaves like a button */
+            font-weight: 400;
+            text-decoration: none;
+            font-family: 'Yantramanav', sans-serif;
+
+            width: 100%;
+            line-height: 25px;
+            font-size: 25px;
+        }
+
+        pre b {
+            font-weight: bold; /* Apply bold style to text inside strong tags */
+        }
+
+        .paragraph pre {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            text-align: left;
+            line-height: 23px;
+            font-size: 19px;
+            padding-left: 10px; /*somehow need padding to make text looked centered*/
+            white-space: pre-wrap;
+        }
+
+        .copyright-txt {
+            width: 100%;
+            padding-top: 40px;
+            /*-webkit-text-size-adjust: 100%;*/
+            /*white-space: pre-wrap;*/
+            word-wrap: break-word;
+            letter-spacing: 0em;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            line-height: 20px;
+            font-size: 14px;
+            color: rgb(91, 90, 90);
+            font-weight: 700;
+            font-family: 'Yantramanav', sans-serif;
+        }
+
+        .disclaimer-txt {
+            letter-spacing: 0;
+            text-align: center;
+            box-sizing: border-box;
+            font-weight: 400;
+            text-decoration: none;
+            line-height: 20px;
+            font-size: 14px;
+            color: rgb(91, 90, 90);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            background-color: rgb(240, 242, 244); /* Set background color */
+            width: 100%; /* Expand background to full width */
+            position: relative; /* Allow for positioning of inner content */
+        }
+
+        footer > * { /* Target all direct children of the footer */
+            max-width: 900px; /* Maintain existing content width */
+            margin: 0 auto; /* Center content within footer */
+            padding: 10px; /* Add padding for visual spacing */
+        }
+
+        .tnc {
+            display: flex;
+            justify-content: flex-end;
+            font-weight: bold;
+            box-sizing: border-box;
+            left: 0;
+            height: 120px;
+            padding: 10px;
+            width: 871px;
+            margin: 0 auto; /* Center the content on the page */
+        }
+
+        .tnc-link {
+            padding-top: 20px;
+            margin-left: 50px;
+            color: black;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            display: none;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        /*region mobile screen handling*/
+        @media screen and (max-width: 871px), only screen and (max-device-width: 871px) {
+            .heading {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            .main-body {
+                width: 95%;
+            }
+            .tnc {
+                width: 90%;
+            }
+            .tnc-link {
+                padding-top: 30px;
+            }
+            .lander-img {
+                width: 100%; /* Set the width to 100% for responsiveness */
+                height: auto; /* Maintain aspect ratio */
+            }
+            .play-btn {
+                width: 90px;
+            }
+        }
+        /*endregion*/
+    </style>
 </head>
 <body>
 <div class="main-body">
     <!-- Header -->
-    <div id="loadingSpinner" class="hidden"></div>
-    <div id="overlay"></div>
     <div class="heading">
         <span>{{ page.headingLine }}</span>
     </div>
@@ -45,6 +223,9 @@
        target="_top">
         <div class="watch-button">Watch Now</div>
     </a>
+
+    <div id="loadingSpinner" class="hidden"></div>
+    <div id="overlay"></div>
 </div>
 <footer>
     <p class="copyright-txt">Copyright 2024. All rights reserved.</p>
