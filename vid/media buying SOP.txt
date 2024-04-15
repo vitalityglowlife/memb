@@ -1,0 +1,33 @@
+Media Buying SOP
+
+Testing Phase:
+
+Level 1: $30
+Level 2: $60
+Level 3: $120
+
+KPIs:
+
+2% CTR (1% min)
+$1 CPC ($1.50 max)
+50% ACR (40% min)
+$30 CPE ($60 max)
+$60 CAC ($120 max)
+
+### Level 1: After $30 spent, analyze the data.
+If ad is within KPI, let it run to $60.
+If ad is out of KPI, pause it (unless you get a sale or engagement).
+
+### Level 2: After $60 spent, analyze the data.
+At this point, stats should have improved.
+If ad is within KPI and we got an engagement, let it run to $120.
+If ad is within KPI but we did not get an engagement, pause the ad.
+If ad is out of KPI, pause the ad.
+
+### Level 3: After $120 spent, analyze the data.
+At this point, we should have a sale or 3-4 engagements.
+If ad is within KPI but has no sales, turn it off.
+If ad is within KPI and has no sales but it has 4+ engagements, let it run another day.
+If ad has 1 or more sales, let it run another day.
+
+Rinse and repeat…
