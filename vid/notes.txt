@@ -1,4 +1,8 @@
-mem2vid2p1 has best voice over for the call to action.
-
 magic media prompts:
 a middle age man stands in front of his bathroom cabinat. It is morning. He is wearing piyama. There's a bucket on the floor.
+
+### fine tune:
+hook, scene, timeline valuation, voice, music.
+
+### Lessons Learned ###
+monitor enabled ads closely. They could start spending 1d after. If don't plan to run the ads then pause them.
